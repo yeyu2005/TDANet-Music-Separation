@@ -1,0 +1,8 @@
+torch>=2.0
+numpy
+soundfile
+librosa
+scipy
+matplotlib
+museval
+mir_eval

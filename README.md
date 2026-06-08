@@ -71,17 +71,33 @@ Evaluate the Ablated (No Attention) Model
 python evaluate.py --musdb-root /path/to/musdb18 --model-path out/ablated/best.pth --model ablated --device npu
 
 ## Repository Structure
-├── adaptationnpu/
 
-│   ├── datamodule.py       # MUSDB18 loading and Mono downmixing
+│  ── data/                          # Raw musdb-hq dataset
 
-│   ├── models/             # Original and Ablated TDANet architectures
+│  ── models/                        # Original and Ablated TDANet architectures
 
-│   └── evaluate.py         # NPU-optimized sliding window inference & mir_eval
+│  ├── tdanet_best.py                # Original TDANet with Top-Down Attention
 
-├── out/                    # Checkpoints and generated CSV metrics
+│  ├── base_model.py                 # Based model of TDANet with Top-Down Attention
 
-├── requirements.txt        # Python dependencies
+│  └── tdanet_ablated.py             # Ablated TDANet (No Attention module)
+
+├── datamodule.py                    # PyTorch Lightning data module wrapper
+
+├── evaluate.py                      # NPU-optimized sliding window inference & mir_eval
+
+├── musdb_dataset.py                 # MUSDB18 loading, chunking, & mono downmix
+
+├── Run_adaptationnpu.ipynb          # Main Jupyter Notebook for execution
+
+├── test.py                          # Standalone testing script
+
+├── train.py                         # The main training loop with Masked SI-SDR loss
+
+
+├── out/                             # Checkpoints and generated CSV metrics
+
+├── requirements.txt                 # Dependencies list
 
 └── README.md
 

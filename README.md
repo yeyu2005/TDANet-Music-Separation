@@ -72,21 +72,24 @@ python evaluate.py --musdb-root /path/to/musdb18 --model-path out/ablated/best.p
 
 ## Repository Structure
 ├── adaptationnpu/
-+
+
 │   ├── datamodule.py       # MUSDB18 loading and Mono downmixing
-+
+
 │   ├── models/             # Original and Ablated TDANet architectures
-+
+
 │   └── evaluate.py         # NPU-optimized sliding window inference & mir_eval
-+
+
 ├── out/                    # Checkpoints and generated CSV metrics
-+
+
 ├── requirements.txt        # Python dependencies
-+
+
 └── README.md
 
 
 ## Acknowledgments & References
 Original TDANet Architecture: Li, Yang & Hu. TDANet: Top-Down Attention for Audio Separation (ICLR 2023).
+
 Dataset: Rafii et al. The MUSDB18 Corpus for Music Separation (2017).
+
 Baseline: Rouard et al. Hybrid Spectrogram and Waveform Source Separation (Demucs v4) (2021).
+

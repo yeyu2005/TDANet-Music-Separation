@@ -73,7 +73,6 @@ python evaluate.py --musdb-root /path/to/musdb18 --model-path out/ablated/best.p
 ## Repository Structure
 
 │  ── data/                          # Raw musdb-hq dataset
-
 │  ── models/                        # Original and Ablated TDANet architectures
 
 │  ├── tdanet_best.py                # Original TDANet with Top-Down Attention

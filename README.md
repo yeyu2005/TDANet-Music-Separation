@@ -59,6 +59,8 @@ git clone [https://github.com/yeyu2005/TDANet-Music-Separation.git](https://gith
 cd TDANet-Music-Separation
 pip install -r requirements.txt
 
+---
+
 ## Usage
 ### Evaluation
 To evaluate the pre-trained models on the MUSDB18 dataset, use the evaluate.py script.
@@ -70,7 +72,7 @@ python evaluate.py --musdb-root /path/to/musdb18 --model-path out/orig/best.pth 
 Evaluate the Ablated (No Attention) Model
 python evaluate.py --musdb-root /path/to/musdb18 --model-path out/ablated/best.pth --model ablated --device npu
 
-
+---
 
 ## Acknowledgments & References
 Original TDANet Architecture: Li, Yang & Hu. TDANet: Top-Down Attention for Audio Separation (ICLR 2023).

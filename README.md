@@ -55,7 +55,7 @@ While this study proves the mathematical value of attention priors in lightweigh
 * `mir_eval` (For mono metric evaluation)
 
 
-git clone [https://github.com/YOUR_USERNAME/TDANet-Music-Separation.git](https://github.com/YOUR_USERNAME/TDANet-Music-Separation.git)
+git clone [https://github.com/yeyu2005/TDANet-Music-Separation.git](https://github.com/YOUR_USERNAME/TDANet-Music-Separation.git)
 cd TDANet-Music-Separation
 pip install -r requirements.txt
 
